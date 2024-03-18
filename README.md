@@ -16,3 +16,6 @@ https://learn.microsoft.com/en-us/azure/aks/azure-files-csi#use-a-persistent-vol
 https://carlos.mendible.com/2021/08/02/aks-persistent-volume-claim-with-an-azure-file-storage-protected-with-a-private-endpoint/
 
 https://github.com/kubernetes-sigs/azuredisk-csi-driver/blob/master/docs/install-csi-driver-v1.30.0.md
+
+az account set --subscription 4b3ba83a-3165-41db-bd36-0bffb018aff0
+az aks get-credentials --resource-group temp --name temp --overwrite-existing
