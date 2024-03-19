@@ -20,6 +20,7 @@ https://github.com/kubernetes-sigs/azuredisk-csi-driver/blob/master/docs/install
 az account set --subscription 4b3ba83a-3165-41db-bd36-0bffb018aff0
 az aks get-credentials --resource-group temp --name temp --overwrite-existing
 
+
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kubernetes-sigs/azuredisk-csi-driver/v1.30.0/deploy/install-driver.sh" -UseBasicParsing | Invoke-Expression; install-driver.sh v1.30.0 snapshot
 
 https://docs.chocolatey.org/en-us/choco/setup#non-administrative-install
