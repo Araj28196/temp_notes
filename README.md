@@ -18,6 +18,9 @@ https://carlos.mendible.com/2021/08/02/aks-persistent-volume-claim-with-an-azure
 https://github.com/kubernetes-sigs/azuredisk-csi-driver/blob/master/docs/install-csi-driver-v1.30.0.md
 
 az account set --subscription 4b3ba83a-3165-41db-bd36-0bffb018aff0
+
+wget https://aka.ms/downloadazcopy-v10-linux -O - | tar -xz
+mv -f azcopy*/azcopy /usr/bin/azcopy
 az aks get-credentials --resource-group temp --name temp --overwrite-existing
 
 
