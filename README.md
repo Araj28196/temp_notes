@@ -26,4 +26,8 @@ az aks get-credentials --resource-group temp --name temp --overwrite-existing
 
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/kubernetes-sigs/azuredisk-csi-driver/v1.30.0/deploy/install-driver.sh" -UseBasicParsing | Invoke-Expression; install-driver.sh v1.30.0 snapshot
 
+azcopy copy "C:\path\to\local\files" "https://<storage-account-name>.file.core.windows.net/<file-share-name>?<SAS-token>" --recursive
+
+az storage share generate-sas --account-name <storage-account-name> --name <file-share-name> --permissions <permissions> --expiry <expiry-date-time> --account-key <storage-account-key>
+
 https://docs.chocolatey.org/en-us/choco/setup#non-administrative-install
