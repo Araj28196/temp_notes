@@ -52,3 +52,12 @@ peer channel \
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjgzNGMzZDItYmJkYy00OWQyLWE5ZmUtMWYzY2E0NjBiYWQw%40thread.v2/0?context=%7b%22Tid%22%3a%2272b17115-9915-42c0-9f1b-4f98e5a4bcd2%22%2c%22Oid%22%3a%22f5cccbe0-df10-4816-995d-b5f9a95cbcab%22%7d
 
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWU3ZjlkOWItM2IwOC00N2ZkLWIxNWUtZjMzMTIyNDc1MTM2%40thread.v2/0?context=%7b%22Tid%22%3a%2272b17115-9915-42c0-9f1b-4f98e5a4bcd2%22%2c%22Oid%22%3a%22613a5cff-f934-4d49-9100-073f1708681c%22%7d
+
+export PATH=${PWD}/../bin:$PATH
+export FABRIC_CFG_PATH=$PWD/../config/
+export CORE_PEER_TLS_ENABLED=true
+export CORE_PEER_LOCALMSPID="Org1MSP"
+export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+export CORE_PEER_ADDRESS=localhost:7051
+
