@@ -31,3 +31,12 @@ azcopy copy "C:\path\to\local\files" "https://<storage-account-name>.file.core.w
 az storage share generate-sas --account-name <storage-account-name> --name <file-share-name> --permissions <permissions> --expiry <expiry-date-time> --account-key <storage-account-key>
 
 https://docs.chocolatey.org/en-us/choco/setup#non-administrative-install
+
+export PATH=${PWD}/../bin:$PATH
+export FABRIC_CFG_PATH=$PWD/../config/
+export CORE_PEER_TLS_ENABLED=true
+export CORE_PEER_LOCALMSPID="Org1MSP"
+export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
+export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
+export CORE_PEER_ADDRESS=localhost:7051
+
